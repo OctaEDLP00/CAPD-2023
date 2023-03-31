@@ -1,5 +1,8 @@
-# Practicas CADP - Conceptos de Algoritmos Datos y Programas
-# Practice CADP - Concept of Algorithms Data y Programs
+# Practicas CADP
+## Conceptos de Algoritmos Datos y Programas
+
+# Practice CADP
+## Concept of Algorithms Data y Programs
 
 <details>
   <summary>
