@@ -2,7 +2,7 @@
 
 ## Concept of Algorithms Data y Programs
 
-[![Spanish](https://img.shields.io/badge/language-Spanish-blue.svg)](README.ES.md)
+[![Spanish](https://img.shields.io/badge/language-Spanish-blue.svg)](README.md)
 
 <details>
   <summary>
