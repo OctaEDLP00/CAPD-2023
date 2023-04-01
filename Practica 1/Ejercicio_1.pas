@@ -1,22 +1,24 @@
-program Ejercicio_1;
 
-var
+Program Ejercicio_1;
+
+Var 
   a: integer;
   b: integer;
 
-begin
+Begin
   a := 0;
   b := 0;
   writeln('Ingresa dos digitios');
   readln(a);
   readln(b);
-  if a > b then
+  If a > b Then
     writeln('El numero ', a, ' es mas grande que ', b);
-  if b > a then
+  If b > a Then
     writeln('El numero ', b, ' es mas grande que ', a);
-  if b = a then
+  If b = a Then
     writeln('Los dos numeros son iguales ', a, ' = ', b);
-end.
+End.
+
 
 
 {

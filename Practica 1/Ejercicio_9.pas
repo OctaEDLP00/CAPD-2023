@@ -1,31 +1,32 @@
-program Ejercicio_9;
 
-var
+Program Ejercicio_9;
+
+Var 
   operador: char;
   numero, resultado: integer;
   continuar: boolean;
 
-begin
+Begin
   continuar := true;
   write('Ingrese un operador (+ para suma, - para resta): ');
   readln(operador);
-  if (operador <> '+') and (operador <> '-') then
-  begin
-    writeln('Error: el operador debe ser + o -');
-    exit;
-  end;
+  If (operador <> '+') And (operador <> '-') Then
+    Begin
+      writeln('Error: el operador debe ser + o -');
+      exit;
+    End;
   resultado := 0;
-  while continuar do
-  begin
-    write('Ingrese un numero entero (0 para terminar): ');
-    readln(numero);
-    if numero = 0 then
-      continuar := false
-    else
-      if operador = '+' then
-        resultado := resultado + numero
-      else
+  While continuar Do
+    Begin
+      write('Ingrese un numero entero (0 para terminar): ');
+      readln(numero);
+      If numero = 0 Then
+        continuar := false
+      Else
+        If operador = '+' Then
+          resultado := resultado + numero
+      Else
         resultado := resultado - numero;
-  end;
+    End;
   writeln('El resultado es: ', resultado);
-end.
+End.

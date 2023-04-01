@@ -1,19 +1,21 @@
-program Ejercicio_5;
 
-var
+Program Ejercicio_5;
+
+Var 
   a, doble: real;
   inicio, fin: integer;
 
-begin
+Begin
   a := 0;
   inicio := 0;
   fin := 10;
   writeln('Escribe un numero:');
   readln(a);
-  doble := a * 2:1:0;
-  while (not (a = doble) and not (inicio = fin)) do begin
-    readln(a);
-    inicio := inicio + 1;
-  end;
-  if doble = a then writeln('el ultimo numero ', doble, ' es el doble del primero ', a / 2);
-end.
+  doble := abs(a) * 2;
+  While (Not (a = doble) And Not (inicio = fin)) Do
+    Begin
+      readln(a);
+      inicio := inicio + 1;
+    End;
+  If doble = a Then writeln('el ultimo numero ', doble, ' es el doble del primero ', a / 2);
+End.
