@@ -6,21 +6,21 @@
 
 Program Ejercicio_1;
 
-Var 
-  i, num, numAnte, numSig, suma: Integer;
+Var
+  contador, num, suma, numMayoyFive: integer;
 
 Begin
-
-  writeln('Ingrese 10 numeros: ');
-  For i := 1 To 10 Do
-    Begin
-      readln(num);
-      numAnte := num;
-      writeln(numAnte, ' linea 14');
-      numSig := numAnte + num;
-      writeln(numSig, ' linea 16');
-      suma := numSig + num;
-    End;
-  // writeln('Numero temporario: ', numTemp, ' Numero: ', num, ' Numero siguiente: ',numSig);
-  writeln('la suma de los 10 numeros ingresado es de: ', suma);
+  suma := 0;
+  writeln('Ingrese 10 numeros para sumar: ');
+  for contador := 1 to 10 do
+  begin
+    readln(num);
+    suma := suma + num;
+    if num > 5 Then
+    begin
+      numMayoyFive := numMayoyFive + 1;
+    end;
+  end;
+  writeln('La suma de los 10 numeros ingresados es: ', suma);
+  WriteLn('cantidad de numeros mayores a 5 son: ', numMayoyFive);
 End.
